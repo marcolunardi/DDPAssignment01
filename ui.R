@@ -1,5 +1,3 @@
-setwd("~/Desktop/Coursera/DDP01")
-
 library(shiny)
 shinyUI(pageWithSidebar(
         headerPanel("Mtcars dataset analysis"),

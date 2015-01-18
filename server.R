@@ -1,10 +1,7 @@
-setwd("~/Desktop/Coursera/DDP01")
-
 library(shiny)
 library(datasets)
 library(UsingR)
 library(graphics)
-
 data <- mtcars
 data$am <- sub(0, "Automatic", data$am)
 data$am <- sub(1, "Manual", data$am)
