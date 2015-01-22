@@ -14,7 +14,7 @@ shinyUI(pageWithSidebar(
                 p("You can find more info about this dataset by typing 'library(datasets)' and '? mtcars' at the prompt of R console."),
                 p("When you modify the settings of engine cylinders number and transmission type on the upper left side of this page,
                   then the app changes the below title content, computes the mean of MPGs and weights for cars corresponding to the chosen settings,
-                  and plots a graph."),
+                  and plots a graph (please scroll down to see it)."),
                 p("The graph reports just the cars corresponding to the chosen settings, so it's
                   possible to compare their MPG and weight values with the average values drawn from the whole dataset (the two fixed orange lines
                   which split the graph in four quadrants)."),
