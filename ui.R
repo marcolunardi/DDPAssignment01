@@ -20,23 +20,25 @@ shinyUI(fluidPage(
                                 comparing the MPG values of different cars."),
                         p("For a correct evaluation, please note that a higher MPG means a lower fuel consumption (more miles with one gallon),
                                 so the upper two quadrants do contain the more efficient cars."),
-                        p("Please scroll down to see the graph, thank you; depending on the dimensions of your monitor, the server.R code could be shown on the right
-                          side of your page, or on the bottom of the page below the graph.")
-                        ))
-                ),
+                        p("Please scroll down to see the graph, thank you.")
+                ))
+        ),
         
         fluidRow(
-                column(6,
-                       helpText("Please move the slider to select the Engine Cylinders Number:"),
-                       sliderInput('cylnum','Number of Cylinders', value = 4, min = 4, max = 8, step = 2,)
-                        ),
-                column(6,
+                column(12, wellPanel(
+                        helpText("Please move the slider to select the Engine Cylinders Number (4, 6 or 8):"),
+                        sliderInput('cylnum','Number of Cylinders', value = 4, min = 4, max = 8, step = 2,)
+                        ))
+        ),
+        
+        fluidRow(
+                column(12, wellPanel(
                        helpText("Please select the desired Transmission Type (Manual or Automatic):"),
                        selectInput('trtype', 'Transmission Type', 
-                                list("Manual" = "Manual", 
-                                "Automatic" = "Automatic")
-                                )
-                       )
+                                   list("Manual" = "Manual", 
+                                        "Automatic" = "Automatic")
+                       ))
+                )
         ),
         
         fluidRow(
