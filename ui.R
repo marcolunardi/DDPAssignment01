@@ -12,15 +12,16 @@ shinyUI(fluidPage(
                         p("When you modify the below settings of engine cylinders number and transmission type,
                                 then the app changes the content of the below title, it computes the mean of MPGs and weights for cars corresponding to the chosen settings,
                                 and it plots a graph."),
-                        p("The graph reports just the cars corresponding to the chosen settings (coloured by transmission type: red for manual, black for automatic), so it's
+                        p("The graph reports just the cars corresponding to the chosen settings (colored by transmission type: red for manual, black for automatic), so it's
                                 possible to compare their MPG and weight values with the average values drawn from the whole dataset (the two fixed orange lines
-                                which split the graph in four quadrants)."),
+                                which split the graph into four quadrants)."),
                         p("The reason why I chose to plot the MPG consumption against the weight is that the weight
                                 has quite a direct influence on fuel consumption, and so it's necessary to take it into account while
                                 comparing the MPG values of different cars."),
                         p("For a correct evaluation, please note that a higher MPG means a lower fuel consumption (more miles with one gallon),
                                 so the upper two quadrants do contain the more efficient cars."),
-                        p("Please scroll down to see the graph, thank you.")
+                        p("Please scroll down to see the graph, thank you."),
+                        p("And please refresh the webpage in case the app doesn't start working the first time you try it, thank you.")
                 ))
         ),
         
